@@ -1,3 +1,6 @@
 # data folder
 data
+venv
+.idea
 !main.py
+!main.ipynb
