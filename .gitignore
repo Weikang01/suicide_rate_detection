@@ -2,5 +2,6 @@
 data
 venv
 .idea
-!main.py
-!main.ipynb
+suicide_rate_model_out
+!logistic_regression_approach.py
+!fine_tune.ipynb
