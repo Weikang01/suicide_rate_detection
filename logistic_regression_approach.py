@@ -28,7 +28,7 @@ import pandas as pd
 data = pd.read_csv(os.path.join(dataset_directory, api.dataset_list_files(dataset_name).files[0].name))
 data.rename(columns={'Suicide': 'label', 'Tweet': 'text'}, inplace=True)
 
-data['label'] = data['label'].astype('category')
+data['label'] = data['label'].astype('category').cat.codes.astype(int)
 
 import nltk
 
